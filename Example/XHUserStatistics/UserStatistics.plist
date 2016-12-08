@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pageEvents</key>
+	<dict>
+		<key>XHViewController</key>
+		<dict>
+			<key>pageName</key>
+			<string>mainPage</string>
+			<key>appear</key>
+			<true/>
+			<key>disAppear</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>actionEvents</key>
+	<dict>
+		<key>buttonClicked:</key>
+		<dict>
+			<key>XHViewController</key>
+			<dict>
+				<key>eventId</key>
+				<string>clickButton</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

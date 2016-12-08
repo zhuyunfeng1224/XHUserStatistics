@@ -1,0 +1,22 @@
+{
+  "name": "XHUserStatistics",
+  "version": "0.1.0",
+  "summary": "A short description of XHUserStatistics.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/XHUserStatistics",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "echo": "leitianshi2009@163.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/XHUserStatistics.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XHUserStatistics/Classes/**/*"
+}

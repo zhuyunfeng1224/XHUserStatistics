@@ -7,12 +7,23 @@
 //
 
 #import "XHAppDelegate.h"
+#import <XHUserStatistics/XHUserStastisticsManager.h>
 
 @implementation XHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [XHUserStastisticsManager manager].actionEventBlock = ^(XHActionEvent *actionEvent) {
+        NSLog(@"there is a action Event: %@", actionEvent.eventId);
+    };
+    
+    [XHUserStastisticsManager manager].appearPageEventBlock = ^(XHPageEvent *pageEvent) {
+        NSLog(@"there is a appear event of page: %@", pageEvent.pageName);
+    };
+    
+    [XHUserStastisticsManager manager].disappearPageEventBlock = ^(XHPageEvent *pageEvent) {
+        NSLog(@"there is a disappear event of page: %@", pageEvent.pageName);
+    };
     return YES;
 }
 

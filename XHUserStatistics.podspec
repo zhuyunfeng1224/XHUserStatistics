@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XHUserStatistics'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XHUserStatistics.'
+  s.version          = '1.0.0'
+  s.summary          = 'a auto statistics of page and event called XHUserStatistics.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: A auto statistics of page and event called XHUserStatistics. You can use just add a plist file and a initialize statments.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/XHUserStatistics'
+  s.homepage         = 'https://github.com/zhuyunfeng1224/XHUserStatistics'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'echo' => 'leitianshi2009@163.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/XHUserStatistics.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zhuyunfeng1224/XHUserStatistics.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
