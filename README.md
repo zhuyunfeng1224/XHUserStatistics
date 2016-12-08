@@ -17,7 +17,7 @@ XHUserStatistics is available through [CocoaPods](http://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 ### install 
 ```ruby
-pod "XHUserStatistics"
+pod "XHUserStatistics", '~> 1.0.1'
 ```
 
 ### create plist file
