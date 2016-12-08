@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XHUserStatistics'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'a auto statistics of page and event called XHUserStatistics.'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ TODO: A auto statistics of page and event called XHUserStatistics. You can use j
   s.homepage         = 'https://github.com/zhuyunfeng1224/XHUserStatistics'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'echo' => 'leitianshi2009@163.com' }
+  s.author           = { 'xihe' => 'leitianshi2009@163.com' }
   s.source           = { :git => 'https://github.com/zhuyunfeng1224/XHUserStatistics.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -37,6 +37,6 @@ TODO: A auto statistics of page and event called XHUserStatistics. You can use j
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'Foundation', 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
