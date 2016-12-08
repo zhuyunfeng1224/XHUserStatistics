@@ -1,9 +1,9 @@
 //
 //  XHUserStatistics.m
-//  MyCard
+//  XHUserStatistics
 //
-//  Created by echo on 2016/11/24.
-//  Copyright © 2016年 Insigma HengTian Software Ltd. All rights reserved.
+//  Created by xihe on 12/08/2016.
+//  Copyright (c) 2016 xihe. All rights reserved
 //
 
 #import "XHUserStastisticsManager.h"
