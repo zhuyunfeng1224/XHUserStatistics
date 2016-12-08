@@ -15,18 +15,24 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 XHUserStatistics is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
-### install 
+
+### 安装 
+
 ```ruby
 pod "XHUserStatistics", '~> 1.0.1'
 ```
 
-### create plist file
-* create a file named `UserStatistics.plist` 
+### 创建plist文件
 
-* add nodes to plist that named `pageEvents` and `actionEvents`
-pageEvent is use to statistics page events
-and actionEvents is use to statistics user-defined events
- the structure of plist file like this:
+* 首先创建一个名为UserStatistics的plist文件 `UserStatistics.plist` 
+
+### 创建plist文件
+
+* 在plist根节点下面添加两个节点分别为：`pageEvents` 和 `actionEvents`
+
+pageEvent用来添加页面事件
+actionEvents用来添加自定义事件，但是只能添加controller内的方法
+plist的结构如下:
 
 ```
 <dict>
@@ -56,8 +62,7 @@ and actionEvents is use to statistics user-defined events
 </dict>
 ```
 
-* Add initialize statements Into AppDelegate
-
+* 在AppDelegate中添加初始化语句
 ```
 [XHUserStastisticsManager manager].actionEventBlock = ^(XHActionEvent *actionEvent) {
 NSLog(@"there is a action Event: %@", actionEvent.eventId);
@@ -72,6 +77,10 @@ NSLog(@"there is a disappear event of page: %@", pageEvent.pageName);
 };
 ```
 
+
+## 注意:
+  自定义事件所有的方法参数类型一定要是OC对象，不可以是基本类型，如：NSInteger要使用NSNumber类型
+  
 ## Author
 
 xihe, leitianshi2009@163.com
